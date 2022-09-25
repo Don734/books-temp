@@ -1,5 +1,7 @@
 //BASE
 @import 'includes/base/_vars';
 @import 'includes/base/_default';
+@import 'includes/base/_mixins';
 
 // MODULES
+@import 'includes/modules/header.scss';
