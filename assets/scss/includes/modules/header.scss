@@ -2,7 +2,7 @@
     padding-top: 10px;
 
     .top-nav {
-        display: flex;
+        display: none;
         justify-content: flex-end;
 
         .nav-list {
@@ -30,10 +30,9 @@
         align-items: center;
         padding-bottom: 15px;
 
-        .left-side, .right-side {
+        .mid-side, .right-side {
             display: flex;
             align-items: center;
-            flex: 1 0 30%;
         }
 
         .link {
@@ -50,11 +49,7 @@
 
         .left-side {
             .col {
-                margin: 0 30px;
-
-                &:first-of-type {
-                    margin-left: 0;
-                }
+                margin-right: 15px;
             }
 
             .logo {
@@ -69,6 +64,7 @@
                 }
 
                 .logo-context {
+                    display: none;
                     margin-top: 5px;
                     font-size: 7px;
                 }
@@ -76,7 +72,15 @@
         }
 
         .mid-side {
-            flex: 1 0 40%;
+            flex: 1 0 60%;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+
+            .phone-link {
+                flex-direction: row !important;
+                margin: 0 20px;
+                margin-top: 15px;
+            }
 
             .site-context {
                 font-weight: 700;
@@ -86,7 +90,9 @@
         }
 
         .right-side {
+            display: none;
             justify-content: flex-end;
+            flex: 1 0 30%;
 
             .col {
                 margin: 0 20px;
@@ -100,6 +106,10 @@
                 font-size: 10px;
             }
         }
+
+        .burger {
+
+        }
     }
 
     .bottom-bar {
@@ -112,7 +122,7 @@
             max-width: 178px;
             width: 100%;
             height: 44px;
-            display: flex;
+            display: none;
             justify-content: center;
             align-items: center;
             font-size: 16px;
@@ -120,43 +130,16 @@
             @include btn-temp;
 
             .burger {
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 20px;
-                height: 18px;
-                margin-right: 15px;
-            }
-
-            .icon {
-                width: 80%;
-                height: 2px;
-                margin: auto;
-                background: $color-1;
-                border-radius: 5px;
-
-                &::before, &::after {
-                    content: '';
-                    position: absolute;
-                    height: 2px;
-                    left: 0;
-                    right: 0;
-                    margin: 0 auto;
+                .icon {
                     background: $color-1;
-                    border-radius: 5px;
-                }
-
-                &::before {
-                    width: 100%;
-                    top: 0;
-                }
-
-                &::after {
-                    width: 60%;
-                    bottom: 0;
+    
+                    &::before, &::after {
+                        background: $color-1;
+                    }
                 }
             }
+
+            
         }
 
         .search {
@@ -172,7 +155,7 @@
                 .search-input {
                     width: 100%;
                     height: 100%;
-                    padding-left: 40px;
+                    padding-left: 20px;
                     border-radius: 40px;
                     border-style: none;
                     border: 2px solid $color-3;
@@ -189,7 +172,7 @@
                     position: absolute;
                     top: 0;
                     right: 0;
-                    max-width: 178px;
+                    max-width: 150px;
                     width: 100%;
                     height: 100%;
                     font-size: 16px;
@@ -201,6 +184,7 @@
     }
 
     .shop-nav {
+        display: none;
         padding-top: 15px;
 
         .nav-list {
