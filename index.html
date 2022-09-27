@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="./assets/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>Start Template</title>
 </head>
 <body>
@@ -50,7 +51,7 @@
                     <div class="col">
                         <a href="#basket" class="link">
                             <span class="icon"><i class="fa-solid fa-basket-shopping"></i></span>
-                            1234
+                            1234 ₽
                         </a>
                     </div>
                 </div>
@@ -59,7 +60,7 @@
                 </div>
             </div>
             <div class="bottom-bar">
-                <a href="#catalog" class="catalog-link">
+                <a href="#catalog" class="catalog-link catalog-menu">
                     <div class="burger">
                         <span class="icon"></span>
                     </div>
@@ -89,7 +90,152 @@
         </div>
     </header>
     <main class="main">
-
+        <section class="slider">
+            <div class="container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-img">
+                                <img src="./assets/img/slider/img1.jpg" alt="">
+                            </div>
+                            <div class="swiper-content">
+                                <p class="text"><b>Бесплатная</b> доставка<br>при заказе от <b>5000 ₽</b></p>
+                                <a href="#" class="catalog-link">Каталог</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-img">
+                                <img src="./assets/img/slider/img2.jpg" alt="">
+                            </div>
+                            <div class="swiper-content">
+                                <p class="text"><b>Бесплатная</b> доставка<br>при заказе от <b>5000 ₽</b></p>
+                                <a href="#" class="catalog-link">Каталог</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-img">
+                                <img src="./assets/img/slider/img3.jpg" alt="">
+                            </div>
+                            <div class="swiper-content">
+                                <p class="text"><b>Бесплатная</b> доставка<br>при заказе от <b>5000 ₽</b></p>
+                                <a href="#" class="catalog-link">Каталог</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hits">
+            <div class="container">
+                <div class="section-title">Хиты продаж</div>
+                <div class="row">
+                    <div class="product-card">
+                        <div class="product-card__img-block">
+                            <img src="" alt="">
+                        </div>
+                        <div class="product-card__content">
+                            <a href="#" class="product-card__link">Косметичка непромокаемая, 31/22/11 см</a>
+                            <div class="colors-row">
+                                <button class="color" data-color=""></button>
+                                <button class="color" data-color=""></button>
+                                <button class="color" data-color=""></button>
+                                <button class="color" data-color=""></button>
+                            </div>
+                            <div class="product-card__price">
+                                <span class="product-card__price">123 ₽ <small>цена</small></span>
+                                <span class="product-card__wholesale-price">103 ₽ <small>опт от 5 000 ₽</small></span>
+                                <div class="quantity_control">
+                                    <button class="btn btn-quantity__minus"><i class="fa-solid fa-chevron-left"></i></button>
+                                    <span class="quantity__value" data-product="" data-max="">1</span>
+                                    <button class="btn btn-quantity__plus"><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__footer">
+                            <a href="#" class="in-basket">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__img-block">
+                            <img src="" alt="">
+                        </div>
+                        <div class="product-card__content">
+                            <a href="#" class="product-card__link">Косметичка непромокаемая, 31/22/11 см</a>
+                            <div class="colors-row">
+                                <button class="color" data-color=""></button>
+                                <button class="color" data-color=""></button>
+                                <button class="color" data-color=""></button>
+                                <button class="color" data-color=""></button>
+                            </div>
+                            <div class="product-card__price">
+                                <span class="product-card__price">123 ₽ <small>цена</small></span>
+                                <span class="product-card__wholesale-price">103 ₽ <small>опт от 5 000 ₽</small></span>
+                                <div class="quantity_control">
+                                    <button class="btn btn-quantity__minus"><i class="fa-solid fa-chevron-left"></i></button>
+                                    <span class="quantity__value" data-product="" data-max="">1</span>
+                                    <button class="btn btn-quantity__plus"><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__footer">
+                            <a href="#" class="in-basket">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__img-block">
+                            <img src="" alt="">
+                        </div>
+                        <div class="product-card__content">
+                            <a href="#" class="product-card__link">Косметичка непромокаемая, 31/22/11 см</a>
+                            <div class="colors-row">
+                                <button class="color" data-color=""></button>
+                                <button class="color" data-color=""></button>
+                                <button class="color" data-color=""></button>
+                                <button class="color" data-color=""></button>
+                            </div>
+                            <div class="product-card__price">
+                                <span class="product-card__price">123 ₽ <small>цена</small></span>
+                                <span class="product-card__wholesale-price">103 ₽ <small>опт от 5 000 ₽</small></span>
+                                <div class="quantity_control">
+                                    <button class="btn btn-quantity__minus"><i class="fa-solid fa-chevron-left"></i></button>
+                                    <span class="quantity__value" data-product="" data-max="">1</span>
+                                    <button class="btn btn-quantity__plus"><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__footer">
+                            <a href="#" class="in-basket">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__img-block">
+                            <img src="" alt="">
+                        </div>
+                        <div class="product-card__content">
+                            <a href="#" class="product-card__link">Косметичка непромокаемая, 31/22/11 см</a>
+                            <div class="colors-row">
+                                <button class="color" data-color=""></button>
+                                <button class="color" data-color=""></button>
+                                <button class="color" data-color=""></button>
+                                <button class="color" data-color=""></button>
+                            </div>
+                            <div class="product-card__price">
+                                <span class="product-card__price">123 ₽ <small>цена</small></span>
+                                <span class="product-card__wholesale-price">103 ₽ <small>опт от 5 000 ₽</small></span>
+                                <div class="quantity_control">
+                                    <button class="btn btn-quantity__minus"><i class="fa-solid fa-chevron-left"></i></button>
+                                    <span class="quantity__value" data-product="" data-max="">1</span>
+                                    <button class="btn btn-quantity__plus"><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__footer">
+                            <a href="#" class="in-basket">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
 
@@ -97,6 +243,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://kit.fontawesome.com/1d3d25d8cb.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
