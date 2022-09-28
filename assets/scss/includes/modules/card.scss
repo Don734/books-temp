@@ -3,12 +3,40 @@
     margin: 10px 0;
     
     .product-card__img-block {
+        position: relative;
         width: 100%;
         height: 300px;
         margin-bottom: 20px;
         background: $color-4;
         border-radius: 10px;
         overflow: hidden;
+
+        .btn-fav {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 35px;
+            height: 35px;
+            background: $color-1;
+            border-radius: 50%;
+            cursor: pointer;
+
+            span {
+                &::before {
+                    content: "\f004";
+                    font-family: 'Font Awesome 6 Free';
+                    font-weight: 400;
+                }
+            }
+
+            &:hover, &.active {
+                span {
+                    &::before {
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
     }
 
     .product-card__content {
@@ -40,6 +68,15 @@
                 display: flex;
                 flex-direction: column;
                 text-align: center;
+                font-weight: bold;
+
+                small {
+                    font-weight: normal;
+                }
+            }
+
+            .product-card__wholesale-price {
+                color: $color-5;
             }
 
             .quantity_control {
@@ -74,11 +111,13 @@
             align-items: center;
             text-transform: uppercase;
             @include btn-temp;
-        }
-    }
 
-    &:first-of-type {
-        margin-top: 0;
+            &:hover {
+                color: $color-3;
+                background: $color-1;
+                border: 1px solid $color-3;
+            }
+        }
     }
 
     &:last-of-type {

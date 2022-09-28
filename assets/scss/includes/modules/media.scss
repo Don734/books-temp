@@ -56,7 +56,19 @@
     .product-card {
         flex: 1 0 45%;
         max-width: 370px;
-        margin: 0;
+        margin: 10px 8px;
+    }
+
+    .footer {
+        display: block;
+
+        .left-side {
+            flex: 1 0 50%;
+        }
+
+        .right-side {
+            flex: 1 0 45%;
+        }
     }
 }
 
@@ -94,10 +106,28 @@
 
     .product-card {
         flex: 1 0 25%;
-        max-width: 250px;
+        max-width: 255px;
 
         .product-card__img-block {
             height: 235px;
+        }
+
+        &:first-of-type {
+            margin-left: 0;
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+    .footer {
+        .left-side {
+            flex: 1 0 40%;
+        }
+
+        .right-side {
+            flex: 1 0 60%;
         }
     }
 }
