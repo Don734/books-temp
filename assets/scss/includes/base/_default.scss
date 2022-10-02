@@ -119,3 +119,77 @@ section {
     text-transform: uppercase;
     text-align: center;
 }
+
+.breadcrumb-wrap {
+    .breadcrumb__list {
+        display: flex;
+
+        .breadcrumb__item {
+            &::before {
+                content: '/';
+                margin-right: -4px;
+            }
+
+            &:first-of-type {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    span {
+        margin-right: 15px;
+    }
+
+    .pag-list {
+        display: flex;
+
+        .pag-item {
+            position: relative;
+            width: 36px;
+            height: 36px;
+            margin: 0 5px;
+            border-radius: 50%;
+            overflow: hidden;
+
+            .pag-link {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: auto;
+            }
+
+            &:not(.points) {
+                background: $color-6;
+
+                &:hover, &.active {
+                    .pag-link {
+                        color: $color-1;
+                        background: $color-3;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            &:first-of-type {
+                margin-left: 0;
+            }
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}
