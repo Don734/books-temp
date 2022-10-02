@@ -89,7 +89,7 @@
             </nav>
         </div>
     </header>
-    <main class="main">
+    <main class="main catalog">
         <div class="container">
             <div class="breadcrumb-wrap">
                 <ul class="breadcrumb__list">
@@ -101,23 +101,300 @@
                     </li>
                 </ul>
             </div>
-            <aside class="catalog-aside">
-                <nav class="nav nav-catalog">
-                    <ul class="nav-list catalog-list"></ul>
-                </nav>
-            </aside>
-            <section class="products">
-                <div class="pagination">
-                    <span>Страница</span>
-                    <ul class="pag-list">
-                        <li class="pag-item"><a class="pag-link" href="#">1</a></li>
-                        <li class="pag-item"><a class="pag-link" href="#">2</a></li>
-                        <li class="pag-item"><a class="pag-link" href="#">3</a></li>
-                        <li class="pag-item points"><a class="pag-link" href="#">...</a></li>
-                        <li class="pag-item"><a class="pag-link" href="#">15</a></li>
-                    </ul>
-                </div>
-            </section>
+            <div class="wrap">
+                <aside class="catalog-aside">
+                    <nav class="nav nav-catalog">
+                        <ul class="nav-list catalog-list">
+                            <li class="nav-item dropdown-item">
+                                Сумки
+                                <ul class="nav-list dropdown-list">
+                                    <li class="nav-item"><a href="#" class="nav-link">Сумка для ноутбука</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">Сумка для фотоаппарата</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">Спортивная/дорожная сумка</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown-item">
+                                Для дома
+                                <ul class="nav-list dropdown-list">
+                                    <li class="nav-item"><a href="#" class="nav-link">Органайзер для вещей</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">Чехол для мебели</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">Органайзер для мелочей</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">Плейсматы</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link">Органайзер для проводов</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link">Пояс для инструментов</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Таблетницы</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+                <section class="products">
+                    <div class="row">
+                        <div class="product-card">
+                            <div class="product-card__img-block">
+                                <img src="" alt="">
+                                <button class="btn btn-fav"><span></span></button>
+                            </div>
+                            <div class="product-card__content">
+                                <a href="#" class="product-card__link">Косметичка непромокаемая, 31/22/11 см</a>
+                                <div class="colors-row">
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                </div>
+                                <div class="product-card__price">
+                                    <span class="product-card__price">123 ₽ <small>цена</small></span>
+                                    <span class="product-card__wholesale-price">103 ₽ <small>опт от 5 000 ₽</small></span>
+                                    <div class="quantity_control">
+                                        <button class="btn btn-quantity__minus"><i class="fa-solid fa-chevron-left"></i></button>
+                                        <span class="quantity__value" data-product="" data-max="">1</span>
+                                        <button class="btn btn-quantity__plus"><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <a href="#" class="in-basket">В корзину</a>
+                                <span class="waiting">в лист ожидания</span>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__img-block">
+                                <img src="" alt="">
+                                <button class="btn btn-fav"><span></span></button>
+                            </div>
+                            <div class="product-card__content">
+                                <a href="#" class="product-card__link">Косметичка непромокаемая, 31/22/11 см</a>
+                                <div class="colors-row">
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                </div>
+                                <div class="product-card__price">
+                                    <span class="product-card__price">123 ₽ <small>цена</small></span>
+                                    <span class="product-card__wholesale-price">103 ₽ <small>опт от 5 000 ₽</small></span>
+                                    <div class="quantity_control">
+                                        <button class="btn btn-quantity__minus"><i class="fa-solid fa-chevron-left"></i></button>
+                                        <span class="quantity__value" data-product="" data-max="">1</span>
+                                        <button class="btn btn-quantity__plus"><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <a href="#" class="in-basket">В корзину</a>
+                                <span class="waiting">в лист ожидания</span>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__img-block">
+                                <img src="" alt="">
+                                <button class="btn btn-fav"><span></span></button>
+                            </div>
+                            <div class="product-card__content">
+                                <a href="#" class="product-card__link">Косметичка непромокаемая, 31/22/11 см</a>
+                                <div class="colors-row">
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                </div>
+                                <div class="product-card__price">
+                                    <span class="product-card__price">123 ₽ <small>цена</small></span>
+                                    <span class="product-card__wholesale-price">103 ₽ <small>опт от 5 000 ₽</small></span>
+                                    <div class="quantity_control">
+                                        <button class="btn btn-quantity__minus"><i class="fa-solid fa-chevron-left"></i></button>
+                                        <span class="quantity__value" data-product="" data-max="">1</span>
+                                        <button class="btn btn-quantity__plus"><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <a href="#" class="in-basket">В корзину</a>
+                                <span class="waiting">в лист ожидания</span>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__img-block">
+                                <img src="" alt="">
+                                <button class="btn btn-fav"><span></span></button>
+                            </div>
+                            <div class="product-card__content">
+                                <a href="#" class="product-card__link">Косметичка непромокаемая, 31/22/11 см</a>
+                                <div class="colors-row">
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                </div>
+                                <div class="product-card__price">
+                                    <span class="product-card__price">123 ₽ <small>цена</small></span>
+                                    <span class="product-card__wholesale-price">103 ₽ <small>опт от 5 000 ₽</small></span>
+                                    <div class="quantity_control">
+                                        <button class="btn btn-quantity__minus"><i class="fa-solid fa-chevron-left"></i></button>
+                                        <span class="quantity__value" data-product="" data-max="">1</span>
+                                        <button class="btn btn-quantity__plus"><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <a href="#" class="in-basket">В корзину</a>
+                                <span class="waiting">в лист ожидания</span>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__img-block">
+                                <img src="" alt="">
+                                <button class="btn btn-fav"><span></span></button>
+                            </div>
+                            <div class="product-card__content">
+                                <a href="#" class="product-card__link">Косметичка непромокаемая, 31/22/11 см</a>
+                                <div class="colors-row">
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                </div>
+                                <div class="product-card__price">
+                                    <span class="product-card__price">123 ₽ <small>цена</small></span>
+                                    <span class="product-card__wholesale-price">103 ₽ <small>опт от 5 000 ₽</small></span>
+                                    <div class="quantity_control">
+                                        <button class="btn btn-quantity__minus"><i class="fa-solid fa-chevron-left"></i></button>
+                                        <span class="quantity__value" data-product="" data-max="">1</span>
+                                        <button class="btn btn-quantity__plus"><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <a href="#" class="in-basket">В корзину</a>
+                                <span class="waiting">в лист ожидания</span>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__img-block">
+                                <img src="" alt="">
+                                <button class="btn btn-fav"><span></span></button>
+                            </div>
+                            <div class="product-card__content">
+                                <a href="#" class="product-card__link">Косметичка непромокаемая, 31/22/11 см</a>
+                                <div class="colors-row">
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                </div>
+                                <div class="product-card__price">
+                                    <span class="product-card__price">123 ₽ <small>цена</small></span>
+                                    <span class="product-card__wholesale-price">103 ₽ <small>опт от 5 000 ₽</small></span>
+                                    <div class="quantity_control">
+                                        <button class="btn btn-quantity__minus"><i class="fa-solid fa-chevron-left"></i></button>
+                                        <span class="quantity__value" data-product="" data-max="">1</span>
+                                        <button class="btn btn-quantity__plus"><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <a href="#" class="in-basket">В корзину</a>
+                                <span class="waiting">в лист ожидания</span>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__img-block">
+                                <img src="" alt="">
+                                <button class="btn btn-fav"><span></span></button>
+                            </div>
+                            <div class="product-card__content">
+                                <a href="#" class="product-card__link">Косметичка непромокаемая, 31/22/11 см</a>
+                                <div class="colors-row">
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                </div>
+                                <div class="product-card__price">
+                                    <span class="product-card__price">123 ₽ <small>цена</small></span>
+                                    <span class="product-card__wholesale-price">103 ₽ <small>опт от 5 000 ₽</small></span>
+                                    <div class="quantity_control">
+                                        <button class="btn btn-quantity__minus"><i class="fa-solid fa-chevron-left"></i></button>
+                                        <span class="quantity__value" data-product="" data-max="">1</span>
+                                        <button class="btn btn-quantity__plus"><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <a href="#" class="in-basket">В корзину</a>
+                                <span class="waiting">в лист ожидания</span>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__img-block">
+                                <img src="" alt="">
+                                <button class="btn btn-fav"><span></span></button>
+                            </div>
+                            <div class="product-card__content">
+                                <a href="#" class="product-card__link">Косметичка непромокаемая, 31/22/11 см</a>
+                                <div class="colors-row">
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                </div>
+                                <div class="product-card__price">
+                                    <span class="product-card__price">123 ₽ <small>цена</small></span>
+                                    <span class="product-card__wholesale-price">103 ₽ <small>опт от 5 000 ₽</small></span>
+                                    <div class="quantity_control">
+                                        <button class="btn btn-quantity__minus"><i class="fa-solid fa-chevron-left"></i></button>
+                                        <span class="quantity__value" data-product="" data-max="">1</span>
+                                        <button class="btn btn-quantity__plus"><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <a href="#" class="in-basket">В корзину</a>
+                                <span class="waiting">в лист ожидания</span>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__img-block">
+                                <img src="" alt="">
+                                <button class="btn btn-fav"><span></span></button>
+                            </div>
+                            <div class="product-card__content">
+                                <a href="#" class="product-card__link">Косметичка непромокаемая, 31/22/11 см</a>
+                                <div class="colors-row">
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                    <button class="color" data-color=""></button>
+                                </div>
+                                <div class="product-card__price">
+                                    <span class="product-card__price">123 ₽ <small>цена</small></span>
+                                    <span class="product-card__wholesale-price">103 ₽ <small>опт от 5 000 ₽</small></span>
+                                    <div class="quantity_control">
+                                        <button class="btn btn-quantity__minus"><i class="fa-solid fa-chevron-left"></i></button>
+                                        <span class="quantity__value" data-product="" data-max="">1</span>
+                                        <button class="btn btn-quantity__plus"><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <a href="#" class="in-basket">В корзину</a>
+                                <span class="waiting">в лист ожидания</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <span>Страница</span>
+                        <ul class="pag-list">
+                            <li class="pag-item"><a class="pag-link" href="#">1</a></li>
+                            <li class="pag-item"><a class="pag-link" href="#">2</a></li>
+                            <li class="pag-item"><a class="pag-link" href="#">3</a></li>
+                            <li class="pag-item points"><a class="pag-link" href="#">...</a></li>
+                            <li class="pag-item"><a class="pag-link" href="#">15</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
         </div>
         <section class="recommends">
             <div class="container">

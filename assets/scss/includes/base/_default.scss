@@ -121,6 +121,8 @@ section {
 }
 
 .breadcrumb-wrap {
+    margin-top: 25px;
+
     .breadcrumb__list {
         display: flex;
 
@@ -133,6 +135,35 @@ section {
             &:first-of-type {
                 &::before {
                     display: none;
+                }
+            }
+        }
+    }
+}
+
+.catalog-aside {
+    flex: 1 0 30%;
+    .nav-catalog {
+        .catalog-list {
+            flex-direction: column;
+
+            .nav-item {
+                font-size: 16px;
+                font-weight: 700;
+                text-align: left;
+                text-transform: uppercase;
+            }
+
+            .dropdown-item {
+                .dropdown-list {
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 15px !important;
+
+                    .nav-item {
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
                 }
             }
         }
