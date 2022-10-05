@@ -1,9 +1,12 @@
 .catalog {
     .wrap {
         display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
     }
 
     .products {
+        flex: 1 0 70%;
         .row {
             margin-top: 0;
         }

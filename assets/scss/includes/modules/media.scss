@@ -53,10 +53,58 @@
         }
     }
 
+    .banner-col {
+        flex: 1 0 45%;
+        margin: 0 8px;
+
+        &:first-of-type {
+            margin-left: 0;
+        }
+    
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
     .product-card {
         flex: 1 0 45%;
         max-width: 370px;
         margin: 10px 8px;
+
+        .product-card__img-block {
+            .btn-fav {
+                width: 35px;
+                right: 5px;
+                border-radius: 50%;
+                transform: translateX(0);
+
+                .text {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .catalog-aside {
+        .nav-catalog-toggle {
+            display: none;
+        }
+    }
+
+    .catalog {
+        .products {
+            .row {
+                .product-card {
+                    &:nth-of-type(odd) {
+                        margin-left: 0;
+                    }
+            
+                    &:nth-of-type(even) {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
     }
 
     .footer {
@@ -69,6 +117,10 @@
         .right-side {
             flex: 1 0 45%;
         }
+    }
+
+    .mobile-panel {
+        display: none;
     }
 }
 
@@ -118,6 +170,38 @@
 
         &:last-of-type {
             margin-right: 0;
+        }
+    }
+
+    .catalog-aside {
+        flex: 1 0 30%;
+
+        .nav-catalog {
+            display: block;
+        }
+    }
+
+    .catalog {
+        .products {
+            .row {
+                .product-card {
+                    &:nth-of-type(odd) {
+                        margin-left: 8px;
+                    }
+            
+                    &:nth-of-type(even) {
+                        margin-right: 8px;
+                    }
+            
+                    &:nth-of-type(3n+1) {
+                        margin-left: 0;
+                    }
+                
+                    &:nth-of-type(3n+3) {
+                        margin-right: 0;
+                    }
+                }
+            }
         }
     }
 
