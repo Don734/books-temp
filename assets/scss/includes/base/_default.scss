@@ -174,6 +174,11 @@ section {
             }
 
             .dropdown-item {
+                .dropdown-toggle {
+                    position: relative;
+                    display: flex;
+                }
+
                 .dropdown-list {
                     display: none;
                     flex-direction: column;
@@ -186,7 +191,11 @@ section {
                 }
 
                 .icon {
+                    display: block;
+                    margin-left: 10px;
                     color: #D9D9D9;
+                    transform: rotate(0);
+                    transition: .3s ease;
                 }
 
                 &.show {
@@ -195,7 +204,7 @@ section {
                     }
 
                     .icon {
-                        transform: rotateX(180deg);
+                        transform: rotate(180deg);
                     }
                 }
             }
