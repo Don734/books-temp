@@ -162,6 +162,23 @@ section {
 
     .nav-catalog {
         display: none;
+        position: fixed;
+        left: 0;
+        bottom: 60px;
+        width: 100%;
+        padding-left: 40px;
+        background: $color-1;
+        z-index: 1;
+
+        .close {
+            position: absolute;
+            top: 5px;
+            right: 15px;
+            font-size: 24px;
+            color: $color-7;
+            background: transparent;
+        }
+
         .catalog-list {
             flex-direction: column;
 
@@ -281,9 +298,9 @@ section {
         height: 100%;
 
         .catalog-menu {
-            max-width: 135px;
+            max-width: 145px;
             width: 100%;
-            height: 38px;
+            height: 44px;
             display: flex;
             justify-content: center;
             align-items: center;

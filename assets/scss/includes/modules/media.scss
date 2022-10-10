@@ -11,6 +11,11 @@
                 }
                 
                 .logo {
+                    img {
+                        max-width: 63px;
+                        max-height: 63px;
+                    }
+
                     .logo-context {
                         display: block;
                     }
@@ -89,9 +94,32 @@
         .nav-catalog-toggle {
             display: none;
         }
+
+        .nav-catalog {
+            width: 45%;
+            top: 0;
+            height: 100%;
+            padding-top: 30px;
+        }
     }
 
     .catalog {
+        margin-bottom: 0;
+        .top-wrap {
+            flex-direction: row;
+            margin-top: 45px;
+            margin-bottom: 40px;
+
+            .subtitle {
+                display: none;
+                margin-top: 0;
+            }
+
+            .sort {
+                display: flex;
+            }
+        }
+
         .products {
             .row {
                 .product-card {
@@ -122,6 +150,10 @@
     .mobile-panel {
         display: none;
     }
+
+    .products-control {
+        display: none;
+    }
 }
 
 @media (min-width: 992px) {
@@ -147,12 +179,8 @@
 
         .bottom-bar {
             .search {
-                max-width: 770px;
+                max-width: 700px;
             }
-        }
-
-        .shop-nav {
-            display: flex;
         }
     }
 
@@ -178,11 +206,21 @@
 
         .nav-catalog {
             display: block;
+            position: static;
+            padding-top: 0;
+            padding-left: 0;
+            width: unset;
+            background: transparent;
+
+            .close {
+                display: none;
+            }
         }
     }
 
     .catalog {
         .products {
+            flex: 1 0 70%;
             .row {
                 .product-card {
                     &:nth-of-type(odd) {
@@ -216,8 +254,24 @@
     }
 }
 
-// @media (min-width: 1024px) {
-//     .product-card {
-        
-//     }
-// }
+@media (min-width: 1024px) {
+    .header {
+        .shop-nav {
+            display: flex;
+        }
+
+        .bottom-bar {
+            .search {
+                max-width: 770px;
+            }
+        }
+    }
+
+    .catalog {
+        .top-wrap {
+            .sort {
+                flex: 1 0 70%;
+            }
+        }
+    }
+}
