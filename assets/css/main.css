@@ -115,6 +115,9 @@ section .row {
 .breadcrumb-wrap .breadcrumb__list {
   display: flex;
 }
+.breadcrumb-wrap .breadcrumb__list .breadcrumb__item {
+  text-transform: uppercase;
+}
 .breadcrumb-wrap .breadcrumb__list .breadcrumb__item::before {
   content: "/";
   margin-right: -4px;
@@ -194,6 +197,28 @@ section .row {
 }
 .catalog-aside .nav-catalog .catalog-list .dropdown-item.show .icon {
   transform: rotate(180deg);
+}
+.catalog-aside.main {
+  position: fixed;
+  top: 0;
+  left: -350px;
+  bottom: 0;
+  max-width: 350px;
+  width: 100%;
+  padding: 30px 20px;
+  background: #ffffff;
+  transition: 0.3s ease;
+  z-index: 1;
+}
+.catalog-aside.main .nav-catalog-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  color: #D9D9D9;
+}
+.catalog-aside.main.show {
+  left: 0;
 }
 
 .pagination {
@@ -608,31 +633,32 @@ section .row {
 .product-card .product-card__content .colors-row .color:last-of-type {
   margin-right: 0;
 }
-.product-card .product-card__content .product-card__price {
+.product-card .product-card__content .product-card__content-price {
   display: flex;
   justify-content: space-between;
+  margin-top: 15px;
 }
-.product-card .product-card__content .product-card__price .product-card__price, .product-card .product-card__content .product-card__price .product-card__wholesale-price {
+.product-card .product-card__content .product-card__content-price .product-card__price, .product-card .product-card__content .product-card__content-price .product-card__wholesale-price {
   display: flex;
   flex-direction: column;
   text-align: center;
   font-weight: bold;
 }
-.product-card .product-card__content .product-card__price .product-card__price small, .product-card .product-card__content .product-card__price .product-card__wholesale-price small {
+.product-card .product-card__content .product-card__content-price .product-card__price small, .product-card .product-card__content .product-card__content-price .product-card__wholesale-price small {
   font-weight: normal;
 }
-.product-card .product-card__content .product-card__price .product-card__wholesale-price {
+.product-card .product-card__content .product-card__content-price .product-card__wholesale-price {
   color: #FF6565;
 }
-.product-card .product-card__content .product-card__price .quantity_control {
+.product-card .product-card__content .product-card__content-price .quantity_control {
   display: flex;
 }
-.product-card .product-card__content .product-card__price .quantity_control .btn {
+.product-card .product-card__content .product-card__content-price .quantity_control .btn {
   width: 32px;
   height: 32px;
   cursor: pointer;
 }
-.product-card .product-card__content .product-card__price .quantity_control .quantity__value {
+.product-card .product-card__content .product-card__content-price .quantity_control .quantity__value {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -680,7 +706,7 @@ section .row {
 .product-card.disabled .product-card__img-block, .product-card.disabled .product-card__content {
   opacity: 0.5;
 }
-.product-card.disabled .product-card__content .product-card__price .quantity_control {
+.product-card.disabled .product-card__content .product-card__content-price .quantity_control {
   display: none;
 }
 .product-card.disabled .product-card__footer .in-basket {
