@@ -135,6 +135,22 @@
         }
     }
 
+    .product {
+        .product-content {
+            .product-gallery {
+                max-width: unset;
+
+                .swiper-product-img {
+                    max-width: unset;
+
+                    .swiper-slide {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+
     .footer {
         display: block;
 
@@ -239,6 +255,25 @@
                         margin-right: 0;
                     }
                 }
+            }
+        }
+    }
+
+    .product {
+        .product-content {
+            flex-wrap: nowrap;
+
+            .product-gallery {
+                max-width: 350px;
+                margin-right: 10px;
+
+                .swiper-product-img {
+                    max-width: 350px;
+                }
+            }
+
+            .product-info {
+                margin-left: 10px;
             }
         }
     }

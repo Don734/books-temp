@@ -28,6 +28,8 @@ function productGallery() {
 
     let swiperImgOptions = {
         spaceBetween: 5,
+        slidesPerView: 1,
+        autoWidth: true,
         thumbs: {
             swiper: swiperProductThumb,
         }
