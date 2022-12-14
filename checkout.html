@@ -32,8 +32,8 @@
         <main class="main checkout">
             <div class="container">
                 <form action="">
-                    <div class="row">
-                        <div class="col-md-8">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
                             <div class="card">
                                 <div class="card-header">Основная информация</div>
                                 <div class="card-body">
@@ -57,12 +57,86 @@
                                 </div>
                             </div>
                             <div class="card">
-                                <div class="card-header">Метод доставки</div>
-                                <div class="card-body"></div>
+                                <div class="card-header">Способ доставки</div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <input type="radio" name="delivery" id="deliveryPickup">
+                                        <label for="deliveryPickup" class="radio-input">
+                                            <div class="col-4 radio-label_title">Самовывоз</div>
+                                            <div class="col-6 radio-label__description">
+                                                Самовывоз доступен каждый день с 09:00 - 21:00
+                                            </div>
+                                            <!-- <div class="col-2 radio-label__img">
+                                                <img src="./assets/img/money.png" alt="">
+                                            </div> -->
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="radio" name="delivery" id="deliveryStandart">
+                                        <label for="deliveryStandart" class="radio-input">
+                                            <div class="col-4 radio-label_title">Стандартная доставка</div>
+                                            <div class="col-6 radio-label__description">
+                                                Стандартная доставка 2 - 3 рабочих дня . В зависимости от времени заказа и адреса.
+                                            </div>
+                                            <!-- <div class="col-2 radio-label__img">
+                                                <img src="./assets/img/money.png" alt="">
+                                            </div> -->
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
                             <div class="card">
                                 <div class="card-header">Метод оплаты</div>
-                                <div class="card-body"></div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <input type="radio" name="payment" id="paymentCash">
+                                        <label for="paymentCash" class="radio-input">
+                                            <div class="col-4 radio-label_title">Наличные</div>
+                                            <div class="col-6 radio-label__description">
+                                                Оплата наличными
+                                            </div>
+                                            <div class="col-2 radio-label__img">
+                                                <img src="./assets/img/money.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="radio" name="payment" id="paymentClick">
+                                        <label for="paymentClick" class="radio-input">
+                                            <div class="col-4 radio-label_title">Click</div>
+                                            <div class="col-6 radio-label__description">
+                                                Оплата онлайн с помощью платежной системы Click
+                                            </div>
+                                            <div class="col-2 radio-label__img">
+                                                <img src="./assets/img/click_logo.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="radio" name="payment" id="paymentPaycom">
+                                        <label for="paymentPaycom" class="radio-input">
+                                            <div class="col-4 radio-label_title">Payme</div>
+                                            <div class="col-6 radio-label__description">
+                                                Оплата онлайн с помощью платежной системы Payme
+                                            </div>
+                                            <div class="col-2 radio-label__img">
+                                                <img src="./assets/img/payme_logo.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="radio" name="payment" id="paymentApelsin">
+                                        <label for="paymentApelsin" class="radio-input">
+                                            <div class="col-4 radio-label_title">Apelsin</div>
+                                            <div class="col-6 radio-label__description">
+                                                Оплата онлайн с помощью платежной системы Apelsin
+                                            </div>
+                                            <div class="col-2 radio-label__img">
+                                                <img src="./assets/img/apelsin_logo.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -72,7 +146,9 @@
                             </div>
                             <div class="card">
                                 <div class="card-header">Промокод</div>
-                                <div class="card-body"></div>
+                                <div class="card-body">
+                                    <input class="form-control" name="promocode" value="" placeholder="Промокод">
+                                </div>
                             </div>
                             <div class="card">
                                 <div class="card-header">Платёжные данные</div>
@@ -80,6 +156,13 @@
                                     <hr class="divider">
                                     <div class="form-group">
                                         <textarea class="form-control" name="description" placeholder="Комментарий заказа..."></textarea>
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Я ознакомился и принимаю условия Публичной оферты</label>
+                                    </div>
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-success btn-block" type="submit">Оформить заказ</button>
                                     </div>
                                 </div>
                             </div>
