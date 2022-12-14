@@ -881,6 +881,17 @@ section .row {
   border-color: #181818;
   border-width: 2px;
 }
+.checkout table {
+  width: 100%;
+}
+.checkout table td:last-of-type {
+  padding-right: 0;
+  text-align: right;
+}
+.checkout .grand-total td {
+  font-size: 16px;
+  font-weight: 700;
+}
 
 .product .wrap .top {
   margin-top: 45px;

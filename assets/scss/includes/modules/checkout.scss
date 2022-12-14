@@ -80,4 +80,19 @@
             }
         }
     }
+
+    table {
+        width: 100%;
+
+        td {
+            &:last-of-type {
+                text-align: right;
+            }
+        }
+    }
+
+    .grand-total td {
+        font-size: 16px;
+        font-weight: 700;
+    }
 }
