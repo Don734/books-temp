@@ -14,6 +14,10 @@ body {
 a {
     color: $color-3;
     text-decoration: none;
+
+    &:hover {
+        color: unset;
+    }
 }
 
 p {
@@ -365,4 +369,8 @@ section {
             }
         }
     }
+}
+
+.form-group {
+    margin-bottom: 1rem;
 }
