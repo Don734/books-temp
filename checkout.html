@@ -33,7 +33,7 @@
             <div class="container">
                 <form action="">
                     <div class="row justify-content-center">
-                        <div class="col-md-6">
+                        <div class="col-md-7">
                             <div class="card">
                                 <div class="card-header">Основная информация</div>
                                 <div class="card-body">
@@ -62,8 +62,8 @@
                                     <div class="form-group">
                                         <input type="radio" name="delivery" id="deliveryPickup">
                                         <label for="deliveryPickup" class="radio-input">
-                                            <div class="col-4 radio-label_title">Самовывоз</div>
-                                            <div class="col-6 radio-label__description">
+                                            <div class="col-3 radio-label_title">Самовывоз</div>
+                                            <div class="col-7 radio-label__description">
                                                 Самовывоз доступен каждый день с 09:00 - 21:00
                                             </div>
                                             <!-- <div class="col-2 radio-label__img">
@@ -74,9 +74,9 @@
                                     <div class="form-group">
                                         <input type="radio" name="delivery" id="deliveryStandart">
                                         <label for="deliveryStandart" class="radio-input">
-                                            <div class="col-4 radio-label_title">Стандартная доставка</div>
-                                            <div class="col-6 radio-label__description">
-                                                Стандартная доставка 2 - 3 рабочих дня . В зависимости от времени заказа и адреса.
+                                            <div class="col-3 radio-label_title">Стандарт</div>
+                                            <div class="col-7 radio-label__description">
+                                                Стандартная доставка 2 - 3 рабочих дня.
                                             </div>
                                             <!-- <div class="col-2 radio-label__img">
                                                 <img src="./assets/img/money.png" alt="">
@@ -91,8 +91,8 @@
                                     <div class="form-group">
                                         <input type="radio" name="payment" id="paymentCash">
                                         <label for="paymentCash" class="radio-input">
-                                            <div class="col-4 radio-label_title">Наличные</div>
-                                            <div class="col-6 radio-label__description">
+                                            <div class="col-3 radio-label_title">Наличные</div>
+                                            <div class="col-7 radio-label__description">
                                                 Оплата наличными
                                             </div>
                                             <div class="col-2 radio-label__img">
@@ -103,8 +103,8 @@
                                     <div class="form-group">
                                         <input type="radio" name="payment" id="paymentClick">
                                         <label for="paymentClick" class="radio-input">
-                                            <div class="col-4 radio-label_title">Click</div>
-                                            <div class="col-6 radio-label__description">
+                                            <div class="col-3 radio-label_title">Click</div>
+                                            <div class="col-7 radio-label__description">
                                                 Оплата онлайн с помощью платежной системы Click
                                             </div>
                                             <div class="col-2 radio-label__img">
@@ -115,8 +115,8 @@
                                     <div class="form-group">
                                         <input type="radio" name="payment" id="paymentPaycom">
                                         <label for="paymentPaycom" class="radio-input">
-                                            <div class="col-4 radio-label_title">Payme</div>
-                                            <div class="col-6 radio-label__description">
+                                            <div class="col-3 radio-label_title">Payme</div>
+                                            <div class="col-7 radio-label__description">
                                                 Оплата онлайн с помощью платежной системы Payme
                                             </div>
                                             <div class="col-2 radio-label__img">
@@ -127,8 +127,8 @@
                                     <div class="form-group">
                                         <input type="radio" name="payment" id="paymentApelsin">
                                         <label for="paymentApelsin" class="radio-input">
-                                            <div class="col-4 radio-label_title">Apelsin</div>
-                                            <div class="col-6 radio-label__description">
+                                            <div class="col-3 radio-label_title">Apelsin</div>
+                                            <div class="col-7 radio-label__description">
                                                 Оплата онлайн с помощью платежной системы Apelsin
                                             </div>
                                             <div class="col-2 radio-label__img">
@@ -139,10 +139,70 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-5">
                             <div class="card">
-                                <div class="card-header">О заказе</div>
-                                <div class="card-body"></div>
+                                <div class="card-header d-flex justify-content-between align-items-center">О заказе <small>3 продукта в корзине</small></div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 cart-item">
+                                            <div class="cart-image">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="cart-content">
+                                                <a class="cart-title" href="#">Косметичка непромокаемая, 31/22/11 см</a>
+                                                <div class="col-12 pt-4 d-flex justify-content-between">
+                                                    <div class="quantity_control">
+                                                        <button class="btn btn-quantity__minus"><i class="fa-solid fa-chevron-left"></i></button>
+                                                        <span class="quantity__value" data-product="" data-max="">1</span>
+                                                        <button class="btn btn-quantity__plus"><i class="fa-solid fa-chevron-right"></i></button>
+                                                    </div>
+                                                    <div class="cart-price">
+                                                        <small></small>
+                                                        <span class="red">103 ₽</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 cart-item">
+                                            <div class="cart-image">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="cart-content">
+                                                <a class="cart-title" href="#">Косметичка непромокаемая, 31/22/11 см</a>
+                                                <div class="col-12 pt-4 d-flex justify-content-between">
+                                                    <div class="quantity_control">
+                                                        <button class="btn btn-quantity__minus"><i class="fa-solid fa-chevron-left"></i></button>
+                                                        <span class="quantity__value" data-product="" data-max="">1</span>
+                                                        <button class="btn btn-quantity__plus"><i class="fa-solid fa-chevron-right"></i></button>
+                                                    </div>
+                                                    <div class="cart-price">
+                                                        <small>123 ₽</small>
+                                                        <span class="red">103 ₽</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 cart-item">
+                                            <div class="cart-image">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="cart-content">
+                                                <a class="cart-title" href="#">Косметичка непромокаемая, 31/22/11 см</a>
+                                                <div class="col-12 pt-4 d-flex justify-content-between">
+                                                    <div class="quantity_control">
+                                                        <button class="btn btn-quantity__minus"><i class="fa-solid fa-chevron-left"></i></button>
+                                                        <span class="quantity__value" data-product="" data-max="">1</span>
+                                                        <button class="btn btn-quantity__plus"><i class="fa-solid fa-chevron-right"></i></button>
+                                                    </div>
+                                                    <div class="cart-price">
+                                                        <small>123 ₽</small>
+                                                        <span class="red">103 ₽</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="card">
                                 <div class="card-header">Промокод</div>
@@ -183,7 +243,7 @@
                                     </div>
                                     <div class="mb-3 form-check">
                                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Я ознакомился и принимаю условия Публичной оферты</label>
+                                        <label class="form-check-label" for="exampleCheck1">Я ознакомился и принимаю условия <a class="link" href="#">Публичной оферты</a></label>
                                     </div>
                                     <div class="d-grid gap-2">
                                         <button class="btn btn-success btn-block" type="submit">Оформить заказ</button>

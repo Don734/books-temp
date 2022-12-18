@@ -49,7 +49,7 @@
                         </a>
                     </div>
                     <div class="col">
-                        <a href="#basket" class="link">
+                        <a href="#basket" class="link cartModalOpen">
                             <span class="icon"><i class="fa-solid fa-basket-shopping"></i></span>
                             1234 ₽
                         </a>
@@ -141,7 +141,7 @@
                                 <span class="product-card__wholesale-price">103 ₽ <small>опт от 5 000 ₽</small></span>
                                 <div class="quantity_control">
                                     <button class="btn btn-quantity__minus"><i class="fa-solid fa-chevron-left"></i></button>
-                                    <span class="quantity__value" data-product="" data-max="">1</span>
+                                    <span class="quantity__value" data-product="" data-value="1" data-max="3">1</span>
                                     <button class="btn btn-quantity__plus"><i class="fa-solid fa-chevron-right"></i></button>
                                 </div>
                             </div>
@@ -469,7 +469,7 @@
     </footer>
 
     <aside class="catalog-aside main">
-        <a href="#" class="nav-catalog-close"><span class="icon"><i class="fa-solid fa-xmark"></i></span></a>
+        <a href="#" class="close"><span class="icon"><i class="fa-solid fa-xmark"></i></span></a>
         <nav class="nav nav-catalog" id="nav_catalog">
             <button class="close"><span><i class="fa-solid fa-xmark"></i></span></button>
             <ul class="nav-list catalog-list">
@@ -524,6 +524,67 @@
                     </a>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="cart-modal">
+        <a href="#" class="close"><span class="icon"><i class="fa-solid fa-xmark"></i></span></a>
+        <div class="content">
+            <p class="title">Корзина</p>
+            <div class="row">
+                <div class="cart-item">
+                    <div class="cart-image"><img src="" alt=""></div>
+                    <div class="cart-content">
+                        <a href="#" class="cart-title">Косметичка непромокаемая, 31/22/11 см</a>
+                        <div class="cart-item__bottom">
+                            <div class="quantity_control">
+                                <button class="btn btn-quantity__minus"><i class="fa-solid fa-chevron-left"></i></button>
+                                <span class="quantity__value" data-product="" data-max="">1</span>
+                                <button class="btn btn-quantity__plus"><i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                            <span class="cart__price"><small>цена</small> 123 ₽</span>
+                        </div>
+                    </div>
+                    <div class="cart-control">
+                        <a href="#" class="cart-remove"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="cart-image"><img src="" alt=""></div>
+                    <div class="cart-content">
+                        <a href="#" class="cart-title">Косметичка непромокаемая, 31/22/11 см</a>
+                        <div class="cart-item__bottom">
+                            <div class="quantity_control">
+                                <button class="btn btn-quantity__minus"><i class="fa-solid fa-chevron-left"></i></button>
+                                <span class="quantity__value" data-product="" data-max="">1</span>
+                                <button class="btn btn-quantity__plus"><i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                            <span class="cart__price"><small>цена</small> 123 ₽</span>
+                        </div>
+                    </div>
+                    <div class="cart-control">
+                        <a href="#" class="cart-remove"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="cart-image"><img src="" alt=""></div>
+                    <div class="cart-content">
+                        <a href="#" class="cart-title">Косметичка непромокаемая, 31/22/11 см</a>
+                        <div class="cart-item__bottom">
+                            <div class="quantity_control">
+                                <button class="btn btn-quantity__minus"><i class="fa-solid fa-chevron-left"></i></button>
+                                <span class="quantity__value" data-product="" data-max="">1</span>
+                                <button class="btn btn-quantity__plus"><i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                            <span class="cart__price"><small>цена</small> 123 ₽</span>
+                        </div>
+                    </div>
+                    <div class="cart-control">
+                        <a href="#" class="cart-remove"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="total">Сумма заказа 1 234 ₽</p>
+            <a href="./checkout.html" class="cart-link">Оформить заказ</a>
         </div>
     </div>
 
