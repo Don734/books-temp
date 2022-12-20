@@ -66,16 +66,13 @@ function cartModal() {
 
 function catalogAside() {
     const aside = $('.catalog-aside');
-    const catalogOpen = $('.catalog-link');
+    const catalogOpen = $('.catalog-menu');
     const catalogClose = aside.find('.close');
     const dropdown = aside.find('.dropdown-toggle');
 
     catalogOpen.on('click', function (e) {
         e.preventDefault();
         aside.addClass('show');
-        aside.slideUp(300, function() {
-            $(this).css('display', 'block');
-        });
     })
 
     dropdown.on('click', function(e) {
@@ -95,7 +92,7 @@ function catalogAside() {
     
 
     $(document).on('click', function (e) {
-        if (!$(e.target).closest('.catalog-aside, .catalog-link').length) {
+        if (!$(e.target).closest('.catalog-aside, .catalog-menu').length) {
             aside.removeClass('show');
         }
     })
@@ -103,7 +100,7 @@ function catalogAside() {
 
 function mainNav() {
     const nav = $('.top-nav');
-    const burger = $('.burger');
+    const burger = $('.top-bar .burger');
 
     burger.on('click', function (e) {
         e.preventDefault();
