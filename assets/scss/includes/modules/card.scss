@@ -23,7 +23,6 @@
             transform: translateX(50%);
             background: $color-1;
             border-radius: 40px;
-            cursor: pointer;
 
             .text {
                 display: block;
@@ -40,7 +39,8 @@
                 }
             }
 
-            &:hover, &.is_fav {
+            &:hover:not(:disabled), &.is_fav {
+                cursor: pointer;
                 span {
                     &::before {
                         font-weight: 900;
@@ -153,11 +153,11 @@
     }
 
     &.disabled {
-        .product-card__img-block, .product-card__content {
-            // opacity: .5;
-        }
-
         .product-card__content {
+            .product-card__link {
+                cursor: auto;
+            }
+
             .product-card__content-price {
                 .quantity_control {
                     display: none;
